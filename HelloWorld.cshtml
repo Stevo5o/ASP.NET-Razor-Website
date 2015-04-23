@@ -7,11 +7,11 @@
         <p>Hello, World @Server.MachineName!</p>
         @{
             var fruit = new List<string> { "apples", "mangos", "pears" };
-            <p>Fav fruits:</p>
+            <p>My Favorite fruits:</p>
             <ul>
-                @foreach(string f in fruit)
+                @foreach(string fruit in fruits)
                 {
-                    <li>@f</li>
+                    <li>@fruit</li>
                 }
             </ul>
         }
